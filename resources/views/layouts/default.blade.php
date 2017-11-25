@@ -65,17 +65,13 @@
 
 <body>
 
-    {{--@include('blue-theme.layouts.chunks.header')--}}
-
     <main>
         @yield('main')
     </main>
 
-    {{--@include('blue-theme.layouts.chunks.footer')--}}
-
     {{-- CSS --}}
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     @yield('css')
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
     {{-- JS --}}
     <script src="{{ asset('js/base.js') }}"></script>
