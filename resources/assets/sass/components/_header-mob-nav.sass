@@ -1,0 +1,69 @@
+.header-mob-nav
+  display: none
+  position: relative
+
+.nav-icon
+  width: 21px
+  height: 14px
+  display: inline-block
+  & .bar1,
+  & .bar2,
+  & .bar3
+    width: 21px
+    height: 2px
+    background-color: #24292e
+    margin: 4px 0
+    transition: 0.4s
+  & .bar1
+    margin-top: 0
+  & .bar3
+    margin-bottom: 0
+.change
+  & .bar1
+    transform: rotate(-45deg) translate(-4px, 3px)
+  & .bar2
+    opacity: 0
+  & .bar3
+    transform: rotate(45deg) translate(-5px, -5px)
+
+.mob-nav
+  display: none
+  flex-direction: column
+  position: absolute
+  top: 50px
+  left: 0
+  width: 100%
+  background-color: #FFF
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1)
+  padding: 10px 20px
+  &.visible
+    display: flex
+  & .main-mob-nav
+    display: flex
+    justify-content: space-between
+    margin-bottom: 15px
+    & a
+      text-decoration: none
+      color: #24292e
+  & .auth-mob-nav
+    display: flex
+    justify-content: center
+    align-items: center
+    & a
+      text-decoration: none
+      display: block
+    & a.sign-in-btn
+      font-family: $OSRegular
+      color: $blue
+      transition: all .3s ease
+      &:hover
+        color: $darkblue
+        transition: all .3s ease
+    & span
+      font-family: $OSRegular
+      color: #5e5e5f
+      margin: 0 15px
+    & a.blue-small-btn
+      padding: 6px 15px
+      font-family: $OSRegular
+      border-radius: 4px

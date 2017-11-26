@@ -17,5 +17,7 @@ mix
     .sass('resources/assets/sass/pages/home.sass', 'public/css/pages')
 
     // JavaScript
-    .js('resources/assets/js/base.js', 'public/js');
+    .js('resources/assets/js/base.js', 'public/js')
+
+    .copyDirectory('resources/assets/img', 'public/img');
 

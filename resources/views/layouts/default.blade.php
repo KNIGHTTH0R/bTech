@@ -65,6 +65,10 @@
 
 <body>
 
+    @if (Route::currentRouteName() == 'home')
+        @include('layouts.chunks.home-header')
+    @endif
+
     <main>
         @yield('main')
     </main>

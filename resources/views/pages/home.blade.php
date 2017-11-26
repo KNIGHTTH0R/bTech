@@ -6,7 +6,7 @@
 
 @section('main')
 
-    Home
+
 
 @endsection
 
