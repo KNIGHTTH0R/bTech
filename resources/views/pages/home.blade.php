@@ -7,6 +7,7 @@
 @section('main')
 
     @include('pages.home.tunel')
+    @include('pages.home.how-its-work')
 
 @endsection
 
