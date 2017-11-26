@@ -65,9 +65,13 @@
 
 <body>
 
+    @include('layouts.chunks.home-header')
+
     <main>
         @yield('main')
     </main>
+
+    @include('layouts.chunks.home-footer')
 
     {{-- CSS --}}
     @yield('css')

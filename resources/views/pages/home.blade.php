@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.home')
 
 @section('title')
     Home
@@ -6,7 +6,8 @@
 
 @section('main')
 
-    Home
+    @include('pages.home.tunel')
+    @include('pages.home.how-its-work')
 
 @endsection
 

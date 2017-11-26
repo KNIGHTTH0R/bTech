@@ -1,0 +1,23 @@
+@import "../vars"
+
+.tunel
+  width: 100%
+  height: 350px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  background: $darkblue-blue
+  & h1
+    color: #FFF
+    font-family: $OSRegular
+    font-size: 32px
+  & p
+    color: #fff
+    font-family: $OSLight
+
+@media #{$mobile}
+  .tunel
+    text-align: center
+    & p
+      padding: 0 15px
