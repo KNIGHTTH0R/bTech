@@ -1,5 +1,7 @@
 <p align="center"><img src="https://media.licdn.com/media/AAEAAQAAAAAAAAg7AAAAJDM3MzNmZTY1LTdmODEtNDJkNC1iNzlkLTFkODMyNjBhZmQ0MA.png"></p>
-<p align="center">[![Build Status](https://travis-ci.org/bStreamORG/bTech.svg?branch=master)](https://travis-ci.org/bStreamORG/bTech)</p>
+<p align="center">
+<a href="https://travis-ci.org/bStreamORG/bTech"><img src="https://travis-ci.org/bStreamORG/bTech.svg?branch=master" alt="Build Status"></a></p>
+    
 
 # bTech :books:
 
