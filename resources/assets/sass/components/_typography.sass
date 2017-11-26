@@ -1,0 +1,54 @@
+@import "../vars"
+
+h1
+  font-size: 28px
+  line-height: 50px
+  font-family: $OSBold
+  color: $darkblue
+  padding-bottom: 10px
+  position: relative
+  margin-bottom: 20px
+  margin-top: 30px
+  &:first-child
+    margin-top: 0
+  &:after
+    content: ''
+    width: 50px
+    height: 2px
+    background-color: $blue
+    position: absolute
+    bottom: 0
+    left: 0
+
+h2
+  font-family: $OSBold
+  font-size: 22px
+  line-height: 32px
+  color: $darkblue
+  margin-top: 30px
+  margin-bottom: 15px
+
+p
+  font-family: $OSRegular
+  font-size: 16px
+  margin-top: 0
+  line-height: 28px
+  color: #37474f
+  margin-bottom: 10px
+  & small
+    font-size: 14px
+    line-height: 24px
+    color: #687788
+
+ul
+  padding-left: 20px
+  margin-bottom: 30px
+  & li
+    color: $blue
+    list-style-type: disc
+    & p
+      color: #37474f
+
+@media #{$mobile}
+  h1
+    font-size: 24px

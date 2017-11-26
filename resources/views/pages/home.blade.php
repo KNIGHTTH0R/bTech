@@ -1,8 +1,6 @@
 @extends('layouts.home')
 
-@section('title')
-    Home
-@stop
+@section('title') Home @endsection
 
 @section('main')
 

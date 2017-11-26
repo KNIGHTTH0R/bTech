@@ -1,0 +1,64 @@
+/* Auth Pages */
+@import "../vars"
+@import "../components/helpers"
+@import "../components/buttons"
+
+html, body, main
+  height: 100%
+
+.auth-page
+  width: 100%
+  height: 100%
+  & .picture-section
+    height: 100%
+    width: calc(100% - 400px)
+    background-size: cover
+    float: left
+    filter: blur(1px)
+  & .form-section
+    width: 400px
+    display: inline-flex
+    justify-content: space-between
+    flex-direction: column
+    height: 100%
+    &:after
+      content: ''
+      height: 65px
+    & .logo
+      padding-top: 15px
+      & a
+        width: 150px
+        display: block
+        margin: 0 auto
+        & img
+          max-height: 50px
+    & form
+      padding: 0 30px
+      > p
+        margin-top: 0
+        font-family: $OSBold
+        text-transform: uppercase
+        font-size: 14px
+        color: $darkblue
+        margin-bottom: 10px
+      @import "../components/form"
+
+@media #{$mobile}
+  .auth-page
+    & .picture-section
+      display: none
+    & .form-section
+      width: 100%
+
+@media #{$sm-tablet}
+  .auth-page
+    & .picture-section
+      background-position: center
+      width: calc(100% - 300px)
+    & .form-section
+      width: 300px
+
+@media #{$lg-tablet}
+  .auth-page
+    & .picture-section
+      background-position: center

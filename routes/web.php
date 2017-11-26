@@ -11,7 +11,11 @@
 |
 */
 
+
+
 Route::get('/', [
     'uses' => 'HomeController@index',
     'as'   => 'home'
 ]);
+
+Auth::routes();

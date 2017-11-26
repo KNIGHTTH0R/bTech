@@ -1,0 +1,57 @@
+@import "../vars"
+@import "../_mixins/placeholder"
+
+.form-input
+  position: relative
+  margin-bottom: 15px
+  & label
+    position: absolute
+    font-size: 12px
+    left: 10px
+    top: 5px
+    color: #a2a2a2
+  & input
+    width: 100%
+    padding: 25px 10px 10px
+    border: 1px solid #efefef
+    border-radius: 4px
+    font-size: 16px
+    color: $darkblue
+    @include placeholder
+      color: #737373
+    &:focus
+      outline: none
+      border-color: $blue
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05)
+  & button[type=submit]
+    padding: 6px 30px
+    border-radius: 4px
+    &:hover
+      cursor: pointer
+    &:focus
+      outline: none
+      background-color: darken($blue, 10%)
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.08)
+
+  &.btns
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: column
+    & p
+      font-size: 15px
+      font-family: $OSLight
+      & a
+        font-family: $OSRegular
+        text-decoration: none
+        color: $blue
+
+  // HAS ERROR
+  &.has-error
+    & input
+      border-color: $red
+    & span.help-block
+      font-family: $OSLight
+      font-size: 14px
+      text-align: center
+      display: block
