@@ -71,6 +71,8 @@
         @yield('main')
     </main>
 
+    @include('layouts.chunks.home-footer')
+
     {{-- CSS --}}
     @yield('css')
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
