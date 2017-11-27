@@ -1,8 +1,9 @@
 <p align="center"><img src="https://media.licdn.com/media/AAEAAQAAAAAAAAg7AAAAJDM3MzNmZTY1LTdmODEtNDJkNC1iNzlkLTFkODMyNjBhZmQ0MA.png"></p>
 <p align="center">
-<a href="https://travis-ci.org/bStreamORG/bTech"><img src="https://travis-ci.org/bStreamORG/bTech.svg?branch=master" alt="Build Status"></a></p>
+<a href="https://travis-ci.org/bStreamORG/bTech"><img src="https://travis-ci.org/bStreamORG/bTech.svg?branch=master" alt="Build Status"></a>
+<a href="https://scrutinizer-ci.com/g/bStreamORG/bTech/?branch=master"><img src="https://scrutinizer-ci.com/g/bStreamORG/bTech/badges/quality-score.png?b=master" alt="Scrutinizer Code Quality"></a>
+</p>
     
-
 # bTech :books:
 
 Web educational service with articles, tasks and collections of articles, tools and videos
