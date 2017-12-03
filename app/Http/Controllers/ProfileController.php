@@ -19,14 +19,17 @@ class ProfileController extends Controller
 
         $authUser = auth()->user();
 
-        $user = User::select()->where('id', '=', $id)->firstOrFail();
+        if($id == $authUser->id){
+            $user = $authUser;
+        } else {
+            $user = User::select()->where('id', '=', $id)->firstOrFail();
+        }
 
         if(!isset($user)) {
             abort('404');
         }
 
         return view('pages.profile', compact('user', 'authUser'));
-
 
     }
 

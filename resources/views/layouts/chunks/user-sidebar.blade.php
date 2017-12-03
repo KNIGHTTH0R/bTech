@@ -4,10 +4,14 @@
         <a href="{{ route('home') }}">
             <img src="{{ asset('img/btech_white_logo.png') }}" alt="bTech logo">
         </a>
+        <div class="user-nav-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
     </div>
 
     <nav class="user-menu">
-
         <ul>
             <li>
                 <a href="{{ route('home') }}" class="active">
@@ -28,7 +32,6 @@
                 </a>
             </li>
         </ul>
-
     </nav>
 
     <footer>

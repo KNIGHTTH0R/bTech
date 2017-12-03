@@ -1,5 +1,11 @@
 <header>
 
+    <div class="user-nav-icon">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+
     <div class="header-search">
 
         <i class="fi flaticon-search"></i>
