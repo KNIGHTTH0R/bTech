@@ -29,8 +29,7 @@ Follow the guide:
     sudo chmod 777 -R storage/
     sudo chmod 777 -R bootstrap/cache
     ```
-6. `php artisan migrate`
-7. `php artisan db:seed`
+6. `php artisan migrate --seed`
 
 
 ## Run PHP Dev Server
