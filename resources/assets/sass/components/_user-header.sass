@@ -1,0 +1,92 @@
+@import "../vars"
+@import "../_mixins/placeholder"
+
+header
+  background-color: $green
+  height: 60px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0 30px
+  & .user-nav-icon
+    display: none
+    width: 21px
+    height: 14px
+    //display: inline-block
+    & .bar1,
+    & .bar2,
+    & .bar3
+      width: 21px
+      height: 2px
+      background-color: #FFF
+      margin: 4px 0
+      transition: 0.4s
+    & .bar1
+      margin-top: 0
+    & .bar3
+      margin-bottom: 0
+  & .header-search
+    & i
+      margin-right: 10px
+      color: #FFF
+    & input
+      background-color: $green
+      border: none
+      color: #FFF
+      width: 400px
+      height: 30px
+      font-size: 16px
+      font-family: $OSRegular
+      @include placeholder
+        color: #FFF
+        font-size: 15px
+        font-family: $OSLight
+      &:focus
+        outline: none
+        height: 28px
+        margin-top: 2px
+        border-bottom: 2px solid rgba(0,0,0,0.1)
+  & .header-profile
+    height: 100%
+    display: flex
+    align-items: center
+    padding: 0 15px
+    position: relative
+    &:hover
+      background-color: rgba(0,0,0,0.1)
+      cursor: pointer
+      & .profile-nav
+        display: block
+    > span
+      font-family: $OSRegular
+      color: #FFF
+      font-size: 16px
+      line-height: 1.6
+    > i
+      margin-left: 10px
+      color: #FFF
+      font-size: 13px
+      &:before
+        vertical-align: middle
+    & .profile-nav
+      display: none
+      position: absolute
+      top: 60px
+      left: 0
+      background-color: #fff
+      box-shadow: 0 1px 1px rgba(0,0,0,0.1)
+      width: 100%
+      & a
+        color: $darkblue
+        text-decoration: none
+        padding: 10px 10px
+        display: block
+        &:hover
+          background-color: #F2F2F2
+
+@media #{$mobile}
+  header
+    & .header-search
+      display: none
+    & .user-nav-icon
+      display: inline-block

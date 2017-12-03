@@ -11,3 +11,7 @@ $('.nav-icon').click(function () {
     $(this).siblings('.mob-nav').toggleClass('visible');
     $(this).toggleClass('change');
 });
+
+$('.user-nav-icon').click(function () {
+    $('aside.sidebar').toggleClass('open');
+});
