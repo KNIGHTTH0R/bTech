@@ -22,14 +22,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=11">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- TODO: Add favicon -->
-
-    <!-- Chrome, Firefox OS and Opera -->
-    <meta name="theme-color" content="#6c9afd">
-    <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#6c9afd">
-    <!-- iOS Safari -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#6c9afd">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/img/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/img/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/img/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('/img/favicon/manifest.json') }}">
+    <link rel="mask-icon" href="{{ asset('/img/favicon/safari-pinned-tab.svg" color="#282d47') }}">
+    <link rel="shortcut icon" href="{{ asset('/img/favicon/favicon.ico') }}">
+    <meta name="msapplication-config" content="{{ asset('/img/favicon/browserconfig.xml') }}">
+    <meta name="theme-color" content="#282d47">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
