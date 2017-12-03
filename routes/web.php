@@ -11,11 +11,24 @@
 |
 */
 
-
-
 Route::get('/', [
     'uses' => 'HomeController@index',
     'as'   => 'home'
 ]);
+
+Route::middleware(['auth'])->group(function () {
+
+    Route::get('/home', function () {
+        return redirect()->route('profile', ['id' => auth()->user()->id]);
+    })->name('home');
+
+    Route::group(['prefix' => 'user'], function () {
+
+        Route::get('/{id}', 'ProfileController@index')->name('profile');
+
+    });
+
+
+});
 
 Auth::routes();

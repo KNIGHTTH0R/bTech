@@ -1,0 +1,50 @@
+@import "../vars"
+
+aside.sidebar
+  background: linear-gradient(to bottom, rgba(57,63,91,1) 0%, rgba(87,96,133,1) 100%)
+  display: flex
+  flex-direction: column
+  position: relative
+  & .logo
+    background-color: $darkblue
+    height: 60px
+    padding: 5px 0
+    & img
+      display: block
+      max-height: calc(100%)
+      padding: 10px 0
+      margin: 0 auto
+  & .user-menu
+    margin: 40px 0
+    & li
+      & a
+        padding: 15px 0
+        display: inline-block
+        color: #FFF
+        width: 100%
+        text-decoration: none
+        text-transform: uppercase
+        font-family: $OSLight
+        &:hover
+          background-color: #282D47
+        &.active
+          background-color: #282D47
+          border-left: 3px solid $green
+        & i
+          width: 25px
+          text-align: center
+          margin: 0 25px
+          color: $green
+          font-size: 19px
+          line-height: 1.6
+
+  & footer
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    & p
+      text-align: center
+      color: #FFF
+      font-size: 12px
+      font-family: $OSRegular

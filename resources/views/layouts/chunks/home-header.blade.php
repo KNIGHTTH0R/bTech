@@ -55,9 +55,23 @@
                     <li><a href="#">Docs</a></li>
                 </ul>
                 <ul class="auth-mob-nav">
-                    <li><a class="sign-in-btn" href="{{ route('login') }}">Sign in</a></li>
-                    <li><span>or</span></li>
-                    <li><a class="blue-small-btn" href="{{ route('register') }}">Sign up</a></li>
+                    @guest
+                        <li><a class="sign-in-btn" href="{{ route('login') }}">Sign in</a></li>
+                        <li><span>or</span></li>
+                        <li><a class="blue-small-btn" href="{{ route('register') }}">Sign up</a></li>
+                    @else
+                        <li>
+                            <a class="blue-small-btn" href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                {{ csrf_field() }}
+                            </form>
+                        </li>
+                    @endguest
                 </ul>
             </div>
         </nav>

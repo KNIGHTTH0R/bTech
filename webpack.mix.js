@@ -14,8 +14,11 @@ let mix = require('laravel-mix');
 mix
     // SASS
     .sass('resources/assets/sass/main.sass', 'public/css')
+
+    // SASS->Pages
     .sass('resources/assets/sass/pages/home.sass', 'public/css/pages')
     .sass('resources/assets/sass/pages/auth.sass', 'public/css/pages')
+    .sass('resources/assets/sass/pages/profile.sass', 'public/css/pages')
 
     // JavaScript
     .js('resources/assets/js/base.js', 'public/js')
