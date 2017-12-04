@@ -14,7 +14,7 @@
     </div>
 
     <div class="header-profile">
-        <span>{{ $authUser->name }}</span>
+        <span>{{ auth()->user()->name }}</span>
         <i class="fi flaticon-arrows"></i>
         <div class="profile-nav">
             <ul>
