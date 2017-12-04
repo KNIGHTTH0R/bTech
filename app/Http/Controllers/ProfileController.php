@@ -16,21 +16,11 @@ class ProfileController extends Controller
      */
     public function index($id)
     {
-
-        $authUser = auth()->user();
-
-        if($id == $authUser->id){
-            $user = $authUser;
-        } else {
-            $user = User::select()->where('id', '=', $id)->firstOrFail();
-        }
-
-        if(!isset($user)) {
-            abort('404');
-        }
-
-        return view('pages.profile', compact('user', 'authUser'));
-
+        $user = auth()->user()->id == $id
+            ? auth()->user()
+            : User::where('id', $id)->firstOrFail();
+        
+        return view('pages.profile', compact('user'));
     }
 
 }
